@@ -1,0 +1,23 @@
+{
+  "name": "ex1-hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0",
+    "@hapi/joi": "^16.1.7",
+    "hapi-swagger": "^10.2.0",
+    "inert": "^5.1.3",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
