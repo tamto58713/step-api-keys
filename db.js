@@ -51,6 +51,19 @@ module.exports = {
             "security": {
                 "api_key": ["read"]
             }
+        },
+        {
+            "operationId": "0004",
+            "summary": "",
+            "description": "This is data 4",
+            "parameters": ["a", "b", "c"],
+            "tags": [
+                "v1"
+            ],
+            "responses": {"data": 04},
+            "security": {
+                "api_key": []
+            }
         }
     ]
 }

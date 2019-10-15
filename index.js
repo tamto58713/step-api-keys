@@ -30,9 +30,21 @@ const init = async () => {
     server.route({
         method: "GET",
         path: "/api/{id}",
-        handler: async  (request, h) => {
-             return request.params.id
+        handler: async  (req, h) => {
+            let id = req.params.id
+            let reqItem = data.find(item => {
+                return item.operationId === id
+            })
+
+            if (!reqItem) 
+                return {"errs": ["Not found!"]}
+
+            if (reqItem.security.api_key.length === 0)
+                return {"errs": ["Access is denied"] }
+            
+            return reqItem
         }
+        
     })
 
 
