@@ -10,7 +10,7 @@ module.exports = {
             ],
             "responses": {"data": 01},
             "security": {
-                "api_key": ["read"]
+                "api_key": ["write", "read"]
             }
         },
         {
@@ -36,27 +36,14 @@ module.exports = {
             ],
             "responses": {"data": 03},
             "security": {
-                "api_key": ["read"]
-            }
-        },
-        {
-            "operationId": "0001",
-            "summary": "",
-            "description": "This is data 1",
-            "parameters": ["a", "b"],
-            "tags": [
-                "v1"
-            ],
-            "responses": {"data": 01},
-            "security": {
-                "api_key": ["read"]
+                "api_key": ["readPublic"]
             }
         },
         {
             "operationId": "0004",
             "summary": "",
-            "description": "This is data 4",
-            "parameters": ["a", "b", "c"],
+            "description": "This is data 04",
+            "parameters": ["a", "b"],
             "tags": [
                 "v1"
             ],
